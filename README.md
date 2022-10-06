@@ -200,6 +200,8 @@ Zettlr is a mature app that has amassed hundreds of directories over the course 
 │   └── test-gui                   # Test files used by `yarn test-gui`
 ├── source                         # Contains the actual source code for the app
 │   ├── app                        # Contains service providers and the boot/shutdown routines
+│   │   ├── service-providers      # Contains service providers and main process modules
+│   │   └── util                   # Contains utility functions related to service providers
 │   ├── common                     # Common files used by several or all renderer processes
 │   │   ├── fonts                  # Contains the font files (note: location will likely change)
 │   │   ├── img                    # Currently unused image files
@@ -211,14 +213,6 @@ Zettlr is a mature app that has amassed hundreds of directories over the course 
 │   │   ├── util                   # A collection of utility functions
 │   │   └── vue                    # Contains Vue components used by the graphical interface
 │   ├── main                       # Contains code for the main process
-│   │   ├── assets                 # Static files (note: location will likely change)
-│   │   ├── commands               # Commands that perform user-actions, run from within zettlr.ts
-│   │   └── modules                # Main process modules
-│   │       ├── document-manager   # The document manager handles all open files
-│   │       ├── export             # The exporter converts Markdown files into other formats
-│   │       ├── fsal               # The File System Abstraction Layer provides the file tree
-│   │       ├── import             # The importer converts other formats into Markdown files
-│   │       └── window-manager     # The window manager manages all application windows
 │   ├── win-about                  # Code for the About window
 │   ├── win-custom-css             # Code for the Custom CSS window
 │   ├── win-defaults               # Code for the defaults file editor
